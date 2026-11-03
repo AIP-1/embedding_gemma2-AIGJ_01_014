@@ -1,6 +1,6 @@
 # EmbeddingGemma 2 멀티모달 임베딩 실습 (Jetson Orin Nano Super)
 
-AIGJ_01_014 · team2 보드
+정원일 · AIGJ_01_014
 
 **결과 보고서: [`report.md`](report.md)** — 6~9단계 결과표, 10단계 진행 중
 
