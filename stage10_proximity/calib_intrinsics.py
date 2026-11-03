@@ -94,7 +94,7 @@ while len(img_pts) < args.n:
     found, corners = cv2.findChessboardCorners(gray, (args.cols, args.rows), cv2.CALIB_CB_FAST_CHECK)
     sb = False
     if not found:                        # 화면(아이패드·모니터)에 띄운 보드는 반사·무아레로 위 방식이 자주 실패 → 더 강한 SB 방식
-        found, corners = cv2.findChessboardCornersSB(gray, (args.cols, args.rows))
+        found, corners = cv2.findChessboardCornersSB(gray, (args.cols, args.rows), flags=cv2.CALIB_CB_EXHAUSTIVE)   # 흐리거나 기운 보드도 찾도록
         sb = True
     if not found:
         continue
