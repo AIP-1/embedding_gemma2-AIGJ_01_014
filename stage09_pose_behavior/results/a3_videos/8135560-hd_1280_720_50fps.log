@@ -1,0 +1,30 @@
+[pose mode=smooth] conf=0.5 behavior=True models=[('action', ['arms_crossed', 'both_up', 'clap', 'idle', 'one_up', 'wave']), ('behavior', ['glance', 'interested', 'linger', 'passing'])]
+[mqtt] data.withio.net:1883 연결 (Success)
+[source] 재생: 8135560-hd_1280_720_50fps.mp4
+INFO:     Started server process [153081]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8013 (Press CTRL+C to quit)
+INFO:     127.0.0.1:33530 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33534 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33536 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33544 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33560 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33576 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35348 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35360 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35372 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35374 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35388 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35402 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35412 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35422 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35424 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35438 - "GET /summary HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:51404 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51408 - "GET /summary HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [153081]

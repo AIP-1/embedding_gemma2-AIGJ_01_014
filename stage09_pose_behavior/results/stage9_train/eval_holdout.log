@@ -1,0 +1,17 @@
+모델 models/action_holdout.pt (window 15, labels ['arms_crossed', 'both_up', 'clap', 'idle', 'one_up', 'wave'])
+  4586617 wave          윈도  54개  모델 정답 9/54
+  7203594 one_up        윈도 103개  모델 정답 103/103
+  8189161 clap          윈도  68개  모델 정답 4/68
+  8502433 both_up       윈도  12개  모델 정답 0/12
+  9019458 idle          윈도   4개  모델 정답 4/4
+  9019458 arms_crossed  윈도  13개  모델 정답 0/13
+
+처음 본 사람 정확도: 120/254 = 0.472   (참고: 규칙 판정 다수결 정답 101/254, 규칙에 없는 박수·팔짱·흔들기는 항상 오답)
+혼동 행렬 (행=정답, 열=예측)
+                arms_cro  both_up     clap     idle   one_up     wave
+  arms_crossed         0        0        0       13        0        0
+       both_up         0        0       12        0        0        0
+          clap         0        0        4       54        0       10
+          idle         0        0        0        4        0        0
+        one_up         0        0        0        0      103        0
+          wave         0        0        6       30        9        9

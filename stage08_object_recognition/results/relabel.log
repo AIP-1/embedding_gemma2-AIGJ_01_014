@@ -1,0 +1,37 @@
+[mode=relabel] conf=0.35 source=src (업로드 폴더: src)
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  16%|█▋        | 102/624 [00:00<00:00, 1012.96it/s]Loading weights:  33%|███▎      | 204/624 [00:00<00:00, 861.42it/s] Loading weights:  47%|████▋     | 292/624 [00:00<00:00, 844.12it/s]Loading weights:  64%|██████▍   | 399/624 [00:00<00:00, 921.75it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1168.51it/s]
+INFO:     Started server process [35137]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8010 (Press CTRL+C to quit)
+[source] 재생: Unknown-2.jpeg
+INFO:     127.0.0.1:39886 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39896 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39904 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown-3.jpeg
+INFO:     127.0.0.1:39908 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39924 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39928 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45070 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown-4.jpeg
+INFO:     127.0.0.1:45082 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45098 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45112 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45124 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown.jpeg
+INFO:     127.0.0.1:45136 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45138 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45154 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45158 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: l_2018082801003220400263791.webp
+INFO:     127.0.0.1:45164 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40362 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40378 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40390 - "GET /recent HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:40392 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40408 - "GET /recent?n=200 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [35137]

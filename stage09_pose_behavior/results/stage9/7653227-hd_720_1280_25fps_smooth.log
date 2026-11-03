@@ -1,0 +1,37 @@
+[pose mode=smooth] conf=0.5 behavior=True models=[]
+INFO:     Started server process [40639]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8011 (Press CTRL+C to quit)
+[source] 재생: 7653227-hd_720_1280_25fps.mp4
+INFO:     127.0.0.1:40392 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40408 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40420 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40432 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58690 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58702 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58718 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58730 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58740 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58746 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58756 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58772 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58788 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58796 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33754 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33770 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33772 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33784 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33796 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33810 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33812 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33816 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33818 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "GET /events HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:52730 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52744 - "GET /events HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40639]

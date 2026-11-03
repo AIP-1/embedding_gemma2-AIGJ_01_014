@@ -1,0 +1,45 @@
+[pose mode=smooth] conf=0.5 behavior=True models=[]
+INFO:     Started server process [52726]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8011 (Press CTRL+C to quit)
+[source] 재생: 6800277-hd_1366_720_25fps.mp4
+INFO:     127.0.0.1:47512 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47516 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47532 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39632 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39640 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39650 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39656 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39668 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39676 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39686 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39696 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56140 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56150 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56158 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56176 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56178 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56182 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56188 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56196 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56202 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54124 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54130 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54132 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54138 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54152 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54168 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54180 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54186 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54200 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55392 - "GET /events HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:55408 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55422 - "GET /events HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [52726]

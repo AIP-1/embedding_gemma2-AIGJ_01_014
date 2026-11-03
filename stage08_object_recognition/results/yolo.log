@@ -1,0 +1,37 @@
+[mode=yolo] conf=0.5 source=src (업로드 폴더: src)
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  45%|████▍     | 278/624 [00:00<00:00, 2778.30it/s]Loading weights:  89%|████████▉ | 556/624 [00:00<00:00, 1633.04it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1883.30it/s]
+INFO:     Started server process [34506]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8010 (Press CTRL+C to quit)
+[source] 재생: Unknown-2.jpeg
+INFO:     127.0.0.1:42874 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42878 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48262 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown-3.jpeg
+INFO:     127.0.0.1:48270 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48280 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48282 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48286 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown-4.jpeg
+INFO:     127.0.0.1:48298 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48308 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48316 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48320 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown.jpeg
+INFO:     127.0.0.1:55432 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55438 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55454 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55470 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: l_2018082801003220400263791.webp
+INFO:     127.0.0.1:55474 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55486 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55498 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55506 - "GET /recent HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:55510 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35800 - "GET /recent?n=200 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [34506]

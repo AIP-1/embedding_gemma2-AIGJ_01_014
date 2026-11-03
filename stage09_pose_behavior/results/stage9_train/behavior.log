@@ -1,0 +1,23 @@
+         glance: 학습 4, 검증 0 윈도
+     interested: 학습 122, 검증 39 윈도
+         linger: 학습 79, 검증 30 윈도
+        passing: 학습 215, 검증 53 윈도
+epoch   0  loss 0.978  val acc 0.869
+epoch   5  loss 0.300  val acc 1.000
+epoch  10  loss 0.046  val acc 1.000
+epoch  15  loss 0.028  val acc 1.000
+epoch  20  loss 0.013  val acc 1.000
+epoch  25  loss 0.009  val acc 1.000
+epoch  30  loss 0.007  val acc 1.000
+epoch  35  loss 0.005  val acc 1.000
+epoch  39  loss 0.005  val acc 1.000
+
+최고 검증 정확도 1.000
+혼동 행렬 (행=정답, 열=예측)
+                   glance interest   linger  passing
+         glance         0        0        0        0
+     interested         0       39        0        0
+         linger         0        0       30        0
+        passing         0        0        0       53
+
+저장: models/behavior.pt  (task=behavior, window=15, labels=['glance', 'interested', 'linger', 'passing'])

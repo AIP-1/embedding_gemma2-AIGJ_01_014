@@ -1,0 +1,38 @@
+[action]
+  3255163 clap             0~7   s  260행
+  3255223 arms_crossed     0~8   s  78행
+  4492700 wave             0~3   s  44행
+  4492700 idle           6.5~10.5s  0행
+  4586958 wave             0~13  s  67행
+  6194926 idle             0~12.7s  115행
+  6668697 both_up          0~5   s  69행
+  6668697 one_up           6~15  s  60행
+  6800277 both_up          0~7   s  61행
+  6944447 one_up           0~4.5 s  69행
+  7202831 one_up           5~18.7s  357행
+  7653227 idle             0~21.5s  246행
+  8135560 idle             2~13.5s  186행
+  8165987 idle             0~3.5 s  28행
+  8165987 one_up           5~12  s  27행
+→ data/action/clap.csv  260행
+→ data/action/arms_crossed.csv  78행
+→ data/action/wave.csv  111행
+→ data/action/idle.csv  575행
+→ data/action/both_up.csv  130행
+→ data/action/one_up.csv  513행
+[behavior]
+  13404996 passing          0~10.8s  4행
+  15007797 passing          0~30.9s  649행
+  15713467 passing          0~12.7s  1행
+  15808538 passing          0~10.3s  192행
+  17386177 glance           0~3   s  1행
+  3205917- glance           0~7.5 s  31행
+  4492700- interested       0~10.3s  81행
+  5319441- passing          0~20.5s  227행
+  6194926- interested       0~12.7s  115행
+  7653227- linger           0~21.5s  246행
+  8135560- interested       0~13.4s  234행
+→ data/behavior/passing.csv  1073행
+→ data/behavior/glance.csv  32행
+→ data/behavior/interested.csv  430행
+→ data/behavior/linger.csv  246행

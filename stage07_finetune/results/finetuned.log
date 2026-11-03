@@ -1,0 +1,6 @@
+/home/wonil/eg2-lab/eval_ir.py:3: DeprecationWarning: Importing from 'sentence_transformers.evaluation' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.evaluation' instead.
+  from sentence_transformers.evaluation import InformationRetrievalEvaluator
+Loading weights:   0%|          | 0/413 [00:00<?, ?it/s]Loading weights:  40%|████      | 167/413 [00:00<00:00, 1640.90it/s]Loading weights:  80%|████████  | 332/413 [00:00<00:00, 1205.62it/s]Loading weights: 100%|██████████| 413/413 [00:00<00:00, 1371.89it/s]
+accuracy@1 0.783
+accuracy@3 0.867
+ndcg@10 0.872

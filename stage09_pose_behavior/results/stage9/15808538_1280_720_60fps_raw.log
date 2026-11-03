@@ -1,0 +1,27 @@
+[pose mode=raw] conf=0.5 behavior=False models=[]
+INFO:     Started server process [37897]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8011 (Press CTRL+C to quit)
+[source] 재생: 15808538_1280_720_60fps.mp4
+INFO:     127.0.0.1:36932 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36940 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36950 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36960 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36974 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36984 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44412 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44422 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44436 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44452 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44464 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44480 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44490 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44502 - "GET /events HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:44512 - "GET /events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44516 - "GET /events HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37897]

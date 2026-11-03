@@ -1,0 +1,27 @@
+   arms_crossed: 학습 21, 검증 1 윈도
+        both_up: 학습 32, 검증 5 윈도
+           clap: 학습 76, 검증 9 윈도
+           idle: 학습 166, 검증 55 윈도
+         one_up: 학습 200, 검증 60 윈도
+           wave: 학습 59, 검증 15 윈도
+epoch   0  loss 1.482  val acc 0.772
+epoch   5  loss 0.628  val acc 0.848
+epoch  10  loss 0.165  val acc 0.917
+epoch  15  loss 0.084  val acc 0.938
+epoch  20  loss 0.041  val acc 0.945
+epoch  25  loss 0.016  val acc 0.917
+epoch  30  loss 0.008  val acc 0.959
+epoch  35  loss 0.008  val acc 0.959
+epoch  39  loss 0.007  val acc 0.952
+
+최고 검증 정확도 0.959
+혼동 행렬 (행=정답, 열=예측)
+                 arms_cro  both_up     clap     idle   one_up     wave
+   arms_crossed         1        0        0        0        0        0
+        both_up         0        5        0        0        0        0
+           clap         3        0        6        0        0        0
+           idle         0        0        0       55        0        0
+         one_up         1        2        0        0       57        0
+           wave         0        0        0        0        0       15
+
+저장: models/action.pt  (task=action, window=15, labels=['arms_crossed', 'both_up', 'clap', 'idle', 'one_up', 'wave'])

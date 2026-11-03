@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/413 [00:00<?, ?it/s]Loading weights:  35%|███▍      | 144/413 [00:00<00:00, 1439.37it/s]Loading weights:  70%|██████▉   | 288/413 [00:00<00:00, 1172.26it/s]Loading weights: 100%|██████████| 413/413 [00:00<00:00, 1254.55it/s]
+[text] 로드 완료. 지금부터 10초간 인코딩 반복 → tegrastats를 보세요
+[text] 끝. 10초 동안 59회 반복 (1회 평균 169 ms)
+[text] GPU 최대 reserved: 540 MB
+
+================================================
+[measure] gpu_load.py
+  전체 실행 시간     : 35.1 s (모델 로드 포함)
+  CPU 최대 RSS       : 2,393 MB
+  GPU 최대 reserved  : 540 MB
+  합계 (근사)        : 2,933 MB
+================================================

@@ -1,0 +1,24 @@
+[pose mode=smooth] conf=0.5 behavior=True models=[('action', ['arms_crossed', 'both_up', 'clap', 'idle', 'one_up', 'wave']), ('behavior', ['glance', 'interested', 'linger', 'passing'])]
+[mqtt] data.withio.net:1883 연결 (Success)
+[source] 재생: 17386177_720_1280_60fps.mp4
+INFO:     Started server process [152656]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8013 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59536 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59552 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59568 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53824 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53840 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53854 - "GET /summary HTTP/1.1" 200 OK
+WARNING ⚠️ not enough matching points
+INFO:     127.0.0.1:53864 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53866 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53882 - "GET /summary HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:53886 - "GET /summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53900 - "GET /summary HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [152656]

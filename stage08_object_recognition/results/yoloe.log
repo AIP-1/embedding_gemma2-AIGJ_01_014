@@ -1,0 +1,39 @@
+/home/wonil/eg2/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+[mode=yoloe] conf=0.25 source=src (업로드 폴더: src)
+Loading weights:   0%|          | 0/624 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 169/624 [00:00<00:00, 1687.38it/s]Loading weights:  58%|█████▊    | 361/624 [00:00<00:00, 1814.08it/s]Loading weights:  87%|████████▋ | 543/624 [00:00<00:00, 1736.66it/s]Loading weights: 100%|██████████| 624/624 [00:00<00:00, 1921.78it/s]
+INFO:     Started server process [36349]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8010 (Press CTRL+C to quit)
+[source] 재생: Unknown-2.jpeg
+INFO:     127.0.0.1:47402 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47416 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47420 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown-3.jpeg
+INFO:     127.0.0.1:47424 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47428 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47430 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47442 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown-4.jpeg
+INFO:     127.0.0.1:47450 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51050 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51058 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51074 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: Unknown.jpeg
+INFO:     127.0.0.1:51078 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51094 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51110 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51118 - "GET /recent HTTP/1.1" 200 OK
+[source] 재생: l_2018082801003220400263791.webp
+INFO:     127.0.0.1:51134 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51148 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51156 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38742 - "GET /recent HTTP/1.1" 200 OK
+[source] 분석 끝. 웹에서 업로드하거나 ▶ 버튼을 누르면 다음 파일을 분석합니다
+INFO:     127.0.0.1:38748 - "GET /recent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38764 - "GET /recent?n=200 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [36349]
