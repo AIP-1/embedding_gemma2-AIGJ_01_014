@@ -4,19 +4,21 @@
 import glob, sys, time
 import torch
 torch.cuda.set_per_process_memory_fraction(0.45)   # 공용 보드: 약 3.3GB까지만 사용
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "common"))   # 공통 로더 common/eg2.py
 from eg2 import load
 
 mode = sys.argv[1] if len(sys.argv) > 1 else "text"
 model = load(vision=mode in ("image", "video", "all"), audio=mode in ("audio", "all"))
 
 texts = ["수업 중에 졸리고 머리가 맑지 않아요", "여름에 냉방 몇 도로 맞춰야 하나요?"]
-images = [{"image": p} for p in sorted(glob.glob("media/*.jpg"))]
-audios = [{"audio": p} for p in sorted(glob.glob("media/*.wav")) if "/raw_" not in p]
+images = [{"image": p} for p in sorted(glob.glob("../stage03-05_embedding_basics/media/*.jpg"))]
+audios = [{"audio": p} for p in sorted(glob.glob("../stage03-05_embedding_basics/media/*.wav")) if "/raw_" not in p]
 
 def run():
     if mode in ("text", "all"):  model.encode(texts, prompt_name="SearchQuery")
     if mode in ("image", "all"): model.encode(images)
-    if mode == "video":          model.encode({"video": "media/clip.mp4"})
+    if mode == "video":          model.encode({"video": "../stage03-05_embedding_basics/media/clip.mp4"})
     if mode in ("audio", "all"): model.encode(audios)
 
 run()                                            # 준비 실행 (값 버림)

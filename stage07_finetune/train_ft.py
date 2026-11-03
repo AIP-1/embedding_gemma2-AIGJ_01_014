@@ -22,7 +22,7 @@ loss = MatryoshkaLoss(model, MultipleNegativesRankingLoss(model),
                       matryoshka_dims=[768, 512, 256, 128])
 
 args = SentenceTransformerTrainingArguments(
-    output_dir="runs/eg2-classroom",
+    output_dir="checkpoints/eg2-classroom",
     num_train_epochs=3,
     per_device_train_batch_size=8,        # OOM이면 4로
     gradient_accumulation_steps=2,

@@ -1,22 +1,22 @@
 #!/bin/bash
-# 9-6 비교: 학습 모델(--model)을 넣고 동영상을 분석해 규칙 결과(runs/stage9/*_smooth.json)와 비교할 /events를 저장
+# 9-6 비교: 학습 모델(--model)을 넣고 동영상을 분석해 규칙 결과(results/stage9/*_smooth.json)와 비교할 /events를 저장
 # 4586958(4K 손 흔들기)은 720p 사본으로 규칙만 한 번 더 돌려 처리 속도 영향을 본다
-# 결과: runs/stage9_model/<영상>_{model,rule}.json
-cd ~/eg2-lab && source ~/eg2/bin/activate
-mkdir -p runs/stage9_model src_pose_test
+# 결과: results/stage9_model/<영상>_{model,rule}.json
+cd "$(dirname "$0")" && source ~/eg2/bin/activate
+mkdir -p results/stage9_model src_pose_test
 PORT=8011
 
 run() {   # $1 = 동영상, $2 = 태그, 나머지 = pose_app 옵션
     v=$1; tag=$2; shift 2
     name=$(basename "$v" .mp4)
-    python pose_app.py --source "$v" --port $PORT "$@" > runs/stage9_model/${name}_$tag.log 2>&1 &
+    python pose_app.py --source "$v" --port $PORT "$@" > results/stage9_model/${name}_$tag.log 2>&1 &
     pid=$!
     for i in $(seq 1 180); do
         s=$(curl -s localhost:$PORT/events 2>/dev/null | python -c "import sys,json;print(json.load(sys.stdin)['source'])" 2>/dev/null)
         [[ "$s" == *done* ]] && break
         sleep 1
     done
-    curl -s localhost:$PORT/events > runs/stage9_model/${name}_$tag.json
+    curl -s localhost:$PORT/events > results/stage9_model/${name}_$tag.json
     kill $pid; wait $pid 2>/dev/null
     sleep 2
 }

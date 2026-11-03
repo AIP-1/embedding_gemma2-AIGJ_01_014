@@ -1,4 +1,6 @@
 import glob, time
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "common"))   # 공통 로더 common/eg2.py
 from eg2 import load
 
 model = load(vision=True)

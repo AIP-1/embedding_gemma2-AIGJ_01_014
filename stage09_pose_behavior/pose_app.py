@@ -17,7 +17,7 @@ from pose_model import (KP_CONF, NOSE, LS, RS, LW, RW, body, facing_score,
 #                  (판정이 초 단위라 실제 속도 유지, 처리가 느리면 프레임을 건너뜀)
 #                  웹캠·스트림은 끊기면 스스로 다시 연결한다 (프로세스 유지)
 # --mqtt-topic T : 응용 A3 (키오스크 관심도). 사람별 행동 요약·손짓 호출을 T/event로, --agg-every초마다 집계를 T/summary(retain)로 발행
-#                  브로커 계정은 ~/cam-lab/.mqtt.env. 에이전트 조회용 REST: GET /summary
+#                  브로커 계정은 $CAM_LAB(기본 ~/cam-lab)/.mqtt.env. 에이전트 조회용 REST: GET /summary
 ap = argparse.ArgumentParser()
 ap.add_argument("--cam", type=int, default=0, help="(이전 방식) 웹캠 번호. --source가 있으면 무시")
 ap.add_argument("--source", default=None,
@@ -79,7 +79,7 @@ BEH_EN = {"지나감": "passing", "힐끗 봄": "glance", "관심 있음": "inte
 pub = None
 if args.mqtt_topic:
     import sys
-    sys.path.insert(0, os.path.expanduser("~/cam-lab"))
+    sys.path.insert(0, os.path.expanduser(os.environ.get("CAM_LAB", "~/cam-lab")))   # 카메라 레포의 common/mqtt_pub.py
     from common import mqtt_pub
     env = mqtt_pub.load_env()
     pub = mqtt_pub.MqttPub(env.get("MQTT_HOST"), int(env.get("MQTT_PORT", 1883)), env.get("MQTT_USER"),

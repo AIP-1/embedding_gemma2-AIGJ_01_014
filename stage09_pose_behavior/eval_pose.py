@@ -25,7 +25,7 @@ labels, win = ck["labels"], ck["window"]
 cm = np.zeros((len(labels), len(labels)), int)
 rule_hit = rule_n = 0
 print(f"모델 {args.model} (window {win}, labels {labels})")
-for path in sorted(glob.glob("runs/stage9/feat/*.csv")):
+for path in sorted(glob.glob("results/stage9/feat/*.csv")):
     key = os.path.basename(path)[:keylen]
     if key[:7] not in args.videos or key not in seg_def:
         continue

@@ -1,7 +1,11 @@
-"""runs/ 아래 측정 결과(6·7·8·9단계)를 마크다운 표로 정리해 출력
-사용법: python summarize_results.py > runs/results_tables.md
+"""각 단계 폴더 results/ 의 측정 결과(6·7·8·9단계)를 마크다운 표로 정리해 출력
+사용법: python tools/summarize_results.py > results_tables.md
 """
 import glob, json, os, re
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+R6, R7, R8, R9 = (os.path.join(ROOT, d, "results") for d in
+                  ("stage06_performance", "stage07_finetune", "stage08_object_recognition", "stage09_pose_behavior"))
 
 def tegra_gpu(path):
     """tegrastats 로그의 GR3D 사용률: 인코딩 반복 구간(상위 20개 샘플 = 약 10초) 평균"""
@@ -25,18 +29,18 @@ rows = [("text", "텍스트 전용", "270M", "질의 2개"), ("image", "+비전"
         ("video", "+비전", "440M", "동영상 10초"), ("audio", "+오디오", "570M", "WAV 3개"),
         ("all", "전체", "740M", "혼합")]
 for key, name, size, inp in rows:
-    p = f"runs/stage6/{key}.log"
+    p = f"{R6}/{key}.log"
     if not os.path.exists(p):
         continue
     m = measure(p)
-    print(f"| {name} | {size} | {m['total']} | {inp} | {m['ms']} | {tegra_gpu(f'runs/stage6/{key}.tegra')} |")
+    print(f"| {name} | {size} | {m['total']} | {inp} | {m['ms']} | {tegra_gpu(f'{R6}/{key}.tegra')} |")
 
 print("\n## 7단계 학습 전후 비교\n")
 print("| 모델 | accuracy@1 | accuracy@3 | ndcg@10 | 학습 시간 |")
 print("| --- | --- | --- | --- | --- |")
 for key, name, tt in [("base", "기준 (google/embeddinggemma-2)", "-"),
                       ("finetuned", "미세 조정 (eg2-classroom)", "228 s (3 epoch, 54 step)")]:
-    p = f"runs/stage7/{key}.log"
+    p = f"{R7}/{key}.log"
     if os.path.exists(p):
         s = open(p).read()
         g = lambda k: (re.search(k + r" ([\d.]+)", s) or [None, "?"])[1]
@@ -46,7 +50,7 @@ print("\n## 8단계 모드별 속도·메모리\n")
 print("| 모드 | 검출 ms (최대 fps) | 임베딩 ms/개 | RAM (MB, RSS+GPU, 최고) | 추출 수 |")
 print("| --- | --- | --- | --- | --- |")
 for mode in ("yolo", "relabel", "yoloe"):
-    p = f"runs/stage8/{mode}.json"
+    p = f"{R8}/{mode}.json"
     if not os.path.exists(p):
         continue
     try:
@@ -57,7 +61,7 @@ for mode in ("yolo", "relabel", "yoloe"):
     print(f"| {mode} | {s['det_ms']:.0f} ({s['det_fps_max']}) | {s['embed_ms']:.0f} | "
           f"{s['rss_peak_mb']}+{s['gpu_peak_mb']} | {r['total']} |")
 for mode in ("yolo", "relabel", "yoloe"):
-    p = f"runs/stage8/{mode}.json"
+    p = f"{R8}/{mode}.json"
     if os.path.exists(p):
         try:
             items = json.load(open(p))["items"]
@@ -69,11 +73,11 @@ for mode in ("yolo", "relabel", "yoloe"):
 print("\n## 9단계 영상별 동작 횟수 (raw vs 안정화)\n")
 print("| 영상 | raw 횟수 | 안정화 횟수 | 행동 요약 (사람 단위) |")
 print("| --- | --- | --- | --- |")
-for p in sorted(glob.glob("runs/stage9/*_raw.json")):
+for p in sorted(glob.glob(f"{R9}/stage9/*_raw.json")):
     name = os.path.basename(p)[:-9]
     try:
         raw = json.load(open(p))
-        sm = json.load(open(f"runs/stage9/{name}_smooth.json"))
+        sm = json.load(open(f"{R9}/stage9/{name}_smooth.json"))
     except (OSError, json.JSONDecodeError):
         print(f"| {name} | (결과 없음) | | |"); continue
     act = lambda c: ", ".join(f"{k} {v}" for k, v in c.items()

@@ -1,9 +1,16 @@
 __pycache__/
 *.pyc
-*.pt
-!models/*.pt
-*.ts
 *.engine
 *.onnx
+*.ts
 *.safetensors
 *.mp4
+!stage03-05_embedding_basics/media/clip.mp4
+# 다시 실행하면 생기는 것 (모델·체크포인트·크롭·영상)
+yolo*.pt
+stage07_finetune/checkpoints/
+stage07_finetune/models/
+stage08_object_recognition/crops/
+stage09_pose_behavior/src_pose*/
+stage10_proximity/calib/*.jpg
+stage10_proximity/calib/clicks.json

@@ -10,7 +10,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--holdout", nargs="*", default=[], help="학습에서 뺄 영상 번호 (앞 7자리)")
 args = ap.parse_args()
 
-FEAT_DIR = "runs/stage9/feat"
+FEAT_DIR = "results/stage9/feat"
 # 영상 이름 앞 7자리: [(라벨, 시작초, 끝초)]  (프레임 시트를 보고 정한 정답 구간)
 ACTION = {
     "4586958": [("wave", 0, 13)],                               # 한 손 계속 흔들기
